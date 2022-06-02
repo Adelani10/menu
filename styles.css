@@ -1,0 +1,120 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: whitesmoke;
+}
+.main-body{
+  max-width: 90%;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  text-align: center;
+  
+}
+.body-name{
+  color: rgb(8, 60, 78);
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
+.underline{
+  height: 4px;
+  margin: 0 auto;
+  background-color: rgb(194, 119, 20);
+  width: 80px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+button{
+  font-size: 18px;
+  color: rgb(194, 119, 20);
+  margin: 0 10px;
+  padding: 5px 12px;
+  border-radius: 8px;
+  border: 1px solid rgb(194, 119, 20);
+}
+.btns{
+  margin-bottom: 5rem;
+}
+
+/* Body-varieties */
+.body-varieties{
+  max-width: 500px;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+}
+.variety-img{
+  display: block;
+  width: 215px;
+  height: 143px;
+  border: 5px solid rgb(194, 119, 20);
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.description{
+  font-size: 18px;
+  margin: 0 5px;
+}
+.price{
+  color: rgb(194, 119, 20);
+}
+.heading{
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 3px;
+  border-bottom: 1px dotted #222;
+  padding: 7px 0;
+  color: rgb(6, 35, 45);
+}
+.variety-txt{
+  color: rgba(6, 35, 45, 0.8);
+  padding: 7px 0;
+}
+.grid{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  place-items: center;
+}
+@media (max-width:900px) {
+     .main-body{
+       width: 90%;
+     }
+  .body-varieties {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 4rem;
+    }
+    .variety-img{
+      width: 90%;
+      margin-bottom: 20px;
+      height: 277px;
+    }
+    .heading{
+      margin: 0 auto;
+      max-width: 90%;
+      padding: 7px 0;
+    }
+    .variety-txt{
+      margin: 0 auto;
+      max-width: 90%;
+      padding: 7px 0;
+    }
+    .grid{
+      display: block;
+    }
+    .btns{
+      margin: 0 auto;
+      margin-bottom: 5rem;
+      max-width: 100%;
+    }
+    button{
+      margin: 5px;
+    }
+}
